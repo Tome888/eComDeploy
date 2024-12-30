@@ -185,7 +185,7 @@ const Shop: NextPage<ShopProps> = ({ products }) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { q = "", filter = "*" } = context.query;
 
-  let url = "http://localhost:5001/products";
+  let url = "https://hallowed-jagged-collision.glitch.me/products";
 
   if (filter !== "*") {
     url += `?gender_like=${filter}`;
